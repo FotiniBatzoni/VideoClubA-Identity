@@ -16,8 +16,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\PROGRAMMING\C#Projects\C#-MyProjects\VideoClubIdentity\VideoClubA-Identity\VideoClubA.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/PROGRAMMING/C\#Projects/C\#-MyProjects/VideoClubIdentity/VideoClubA-Identity/VideoClubA.Web/Areas/Account/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+[D:/PROGRAMMING/C\#Projects/C\#-MyProjects/VideoClubIdentity/VideoClubA-Identity/VideoClubA.Web/Areas/Accounts/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWNjb3VudHNcVmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PROGRAMMING/C\#Projects/C\#-MyProjects/VideoClubIdentity/VideoClubA-Identity/VideoClubA.Web/Areas/Accounts/Views/Account/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWNjb3VudHNcVmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/PROGRAMMING/C\#Projects/C\#-MyProjects/VideoClubIdentity/VideoClubA-Identity/VideoClubA.Web/Areas/ActiveReservations/Views/ActiveReservation/ActiveReservationsPanel.cshtml]

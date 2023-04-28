@@ -36,11 +36,12 @@ var connectionString = builder.Configuration.GetConnectionString("VideoClubDbCon
 builder.Services.AddDbContext<VideoClubDbContext>(options =>
     options.UseSqlServer(connectionString));
 
+//Custom Identity
 builder.Services.AddAuthentication("MyCookieAuth").AddCookie("MyCookieAuth", options =>
 {
     options.Cookie.Name = "MyCookieAuth";
-    options.LoginPath= "/Account/Login";
-    options.AccessDeniedPath = "/Account/AccessDenied";
+    options.LoginPath = "/Accounts/Account/Index";
+    options.AccessDeniedPath = "/Accounts/Account/AccessDenied";
     options.ExpireTimeSpan = TimeSpan.FromDays(1);
 });
 
@@ -72,7 +73,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
+app.UseAuthentication();
 
 app.UseAuthorization();
 

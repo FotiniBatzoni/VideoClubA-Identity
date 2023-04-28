@@ -47,7 +47,7 @@ namespace VideoClubA.Common.Services
         {
             return _context.MovieCopies
                 .Where(m => m.Id.Contains(movieCopyId))
-                .FirstOrDefault(); ;
+                .FirstOrDefault(); 
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using VideoClubA.Core.Entities;
@@ -26,6 +27,7 @@ namespace VideoClubA.Web.Areas.Reservations.Controllers
 
         [HttpGet]
         [Area("Reservations")]
+        [Authorize(Policy = "AdminOnly")]
         public IActionResult ReservationsPerCustomer( string customerId, string firstName, string lastName, 
             int page = 1, int pageSize = 5)
         {
@@ -34,6 +36,7 @@ namespace VideoClubA.Web.Areas.Reservations.Controllers
 
         [HttpGet]
         [Area("Reservations")]
+        [Authorize(Policy = "AdminOnly")]
         public ActionResult DisplayReservationForm(DisplayReservationFormViewModel reservation)
         {
             List<Movie> allMovies = _moviesDb.GetAllMovies();
@@ -68,6 +71,7 @@ namespace VideoClubA.Web.Areas.Reservations.Controllers
 
         [HttpPost]
         [Area("Reservations")]
+        [Authorize(Policy = "AdminOnly")]
         public ActionResult CreateReservation(CreateReservationBindingModel reservation)
         {
             SaveReservation( reservation);
